@@ -59,9 +59,10 @@ The purpose is to evaluate the performance of these models and make recommendati
 ![6](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/6Easy_Ensemble_AdaBoost_Classifier.png)
 
 
-## :heavy_dollar_sign: Summary:
+## :heavy_dollar_sign: Summary of Six Models:
+![Table1](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/Table1.png)
 
 ### Results Summary:
 
 ## :chart: Recommendations:
-- which model to use, or there is no recommendation with a justification
+- Out of these six models, the Easy Ensemble AdaBoost Classifier Model is the most successful.
