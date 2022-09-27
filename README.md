@@ -101,6 +101,9 @@ Reference:
 ![Table1](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/Table1.png)
 
 ### Results Summary:
+For balanced accuracy score, the Easy Ensemble with Adaptive Boost is the highest at 0.9317, and no other model really comes close, because the next highest is the Balanced Random Forest at 0.7885.  
+
+For high risk precision, no model is truly recommendable in the sense that they range from 0.01 to 0.09, so all models are considered to have too many false positives, but of these, the one that is the most precise among them would be the Easy Ensemble with Adaptive Boost at 0.09.  Since precision is not a deal breaker in this industry, and recall is more important, it is noted that the Easy Ensemble with Adaptive Boost has the highest recall and that no other model comes close.   When looking at the weighted average of precision and recall (the F1 score), the Easy Ensemble with Adaptive Boost is the highest with a score of 0.16.       
 
 ## :chart: Recommendations:
 - Out of these six models, the Easy Ensemble AdaBoost Classifier Model is the most successful.
