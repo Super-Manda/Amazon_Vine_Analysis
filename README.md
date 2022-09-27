@@ -47,7 +47,7 @@ Reference:
 - Accuracy: .6439
 - High Risk Precision: .01
 - Recall: .69
-
+- This is eliminated because of relatively low balanced accuracy and .01 high risk precision. The recall is also not among the better models.  
 ![1](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/1Naive_Random_Oversampling.png)
 
 
@@ -56,7 +56,7 @@ Reference:
 - Accuracy: .6629
 - High Risk Precision: .01
 - Recall: .63
-
+- This is eliminated because of relatively low balanced accuracy and .01 high risk precision. The recall is also the worst of all the models.
 ![2](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/2Smote_Oversampling.png)
 
 
@@ -65,7 +65,7 @@ Reference:
 - Accuracy: .5443
 - High Risk Precision: .01
 - Recall: .69
-
+- This is eliminated because of its lowest balanced accuracy among all models and .01 high risk precision. The recall is also not among the better models.
 ![3](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/3Cluster_Centroids.png)
 
 
@@ -74,7 +74,7 @@ Reference:
 - Accuracy: .6748
 - High Risk Precision: .01
 - Recall: .76
-
+- This is eliminated because of relatively low balanced accuracy and .01 high risk precision. The recall is the second best among all models, so it could be a third choice after the next two, but it's not ideal.
 ![4](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/4SMOTEENN.png)
 
 
@@ -83,7 +83,7 @@ Reference:
 - Accuracy: .7885
 - High Risk Precision: .03
 - Recall: .70
-
+- This model has the second highest balanced accuracy and .03 high risk precision which is higher than the prior 4 models. The recall is the third best among the models.
 ![5](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/5Balanced_Random_Forest_Classifier.png)
 
 
@@ -92,7 +92,7 @@ Reference:
 - Accuracy: .9317
 - High Risk Precision: .09
 - Recall: .92
-
+- This has the best balanced accuracy score and the best high risk precision score and the best recall, so it is the clear best model overall.
 ![6](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/6Easy_Ensemble_AdaBoost_Classifier.png)
 
 
