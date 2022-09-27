@@ -107,12 +107,11 @@ Reference:
 
 - Since precision is not a deal breaker in this industry, and recall is more important, it is noted that the Easy Ensemble with Adaptive Boost has the highest recall and that no other model comes close.   
 
-- When looking at the weighted average of precision and recall (the F1 score), the Easy Ensemble with Adaptive Boost is the highest with a score of 0.16.  So one may want to use the Easy Ensemble with Adaptive Boost method, but then also go through the results with a finer-tooth comb after it to do some type of post-hoc analysis that would make it a better model, since 0.16 is hard to justify using on its own.
+- When looking at the weighted average of precision and recall (the F1 score), the Easy Ensemble with Adaptive Boost is the highest with a score of 0.16.  So one may want to use the Easy Ensemble with Adaptive Boost method, but then also go through the results with a finer-tooth comb after it to do some type of post-hoc analysis that would make it a better model for high risk precision, since 0.16 is hard to justify using on its own.  To do this, perhaps the Lending Club could make some kind of "loan appeal process" such as, if you feel that your application was denied in error, please contact the Lending Club.  This way, if people can show their actual credit-worthiness on appeal, it would bring up the prcision value.
 
 ## :chart: Recommendations:
-- Out of these six models, the Easy Ensemble AdaBoost Classifier Model is the most successful.  The next most successful as a backup choice would be the Balanced Forest Classifer model.
+- Out of these six models, the Easy Ensemble AdaBoost Classifier Model is the most successful that should be used in conjunction with some kind of Lending Club appeals process, which could strengthen its precision in the future.  The next most successful as a backup choice would be the Balanced Forest Classifer model, but this one is clearly not as good as the Easy Ensemble-- it'd be more of a second best choice if needed.
 
 - The least successful is the Cluster Centroids.  That model should definitely not be used because there is no metric for which it provides good results.
 
-- In general, the models with lowest accuracy and precision are the first 4 models, which can be eliminated.
-
+- In general, the models with lowest accuracy and precision are the first 4 models, which can also be eliminated.
