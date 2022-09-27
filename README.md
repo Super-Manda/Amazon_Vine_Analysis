@@ -107,10 +107,12 @@ Reference:
 
 - Since precision is not a deal breaker in this industry, and recall is more important, it is noted that the Easy Ensemble with Adaptive Boost has the highest recall and that no other model comes close.   
 
-- When looking at the weighted average of precision and recall (the F1 score), the Easy Ensemble with Adaptive Boost is the highest with a score of 0.16.       
+- When looking at the weighted average of precision and recall (the F1 score), the Easy Ensemble with Adaptive Boost is the highest with a score of 0.16.  So one may want to use the Easy Ensemble with Adaptive Boost method, but then also go through the results with a finer-tooth comb after it to do some type of post-hoc analysis that would make it a better model, since 0.16 is hard to justify using on its own.
 
 ## :chart: Recommendations:
-- Out of these six models, the Easy Ensemble AdaBoost Classifier Model is the most successful.
+- Out of these six models, the Easy Ensemble AdaBoost Classifier Model is the most successful.  The next most successful as a backup choice would be the Balanced Forest Classifer model.
 
 - The least successful is the Cluster Centroids.  That model should definitely not be used because there is no metric for which it provides good results.
+
+- In general, the models with lowest accuracy and precision are the first 4 models, which can be eliminated.
 
