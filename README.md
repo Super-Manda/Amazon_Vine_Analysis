@@ -45,7 +45,7 @@ Reference:
 
 **1. Naive Random Oversampling**
 - Accuracy: .6439
-- Precision: .01
+- High Risk Precision: .01
 - Recall: .69
 
 ![1](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/1Naive_Random_Oversampling.png)
@@ -54,7 +54,7 @@ Reference:
 
 **2. SMOTE Oversampling (Synthetic Minority Oversampling Technique)**
 - Accuracy: .6629
-- Precision: .01
+- High Risk Precision: .01
 - Recall: .63
 
 ![2](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/2Smote_Oversampling.png)
@@ -63,7 +63,7 @@ Reference:
 
 **3. Cluster Centroids Undersampling**
 - Accuracy: .5443
-- Precision: .01
+- High Risk Precision: .01
 - Recall: .69
 
 ![3](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/3Cluster_Centroids.png)
@@ -72,7 +72,7 @@ Reference:
 
 **4. SMOTEENN (Synthetic Minority Oversampling Technique with Edited Nearest Neighbor Undersampling)**
 - Accuracy: .6748
-- Precision: .01
+- High Risk Precision: .01
 - Recall: .76
 
 ![4](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/4SMOTEENN.png)
@@ -81,7 +81,7 @@ Reference:
 
 **5. Balanced Random Forest Classifier**
 - Accuracy: .7885
-- Precision: .03
+- High Risk Precision: .03
 - Recall: .70
 
 ![5](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/5Balanced_Random_Forest_Classifier.png)
@@ -90,7 +90,7 @@ Reference:
 
 **6. Easy Ensemble AdaBoost Classifier**
 - Accuracy: .9317
-- Precision: .09
+- High Risk Precision: .09
 - Recall: .92
 
 ![6](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/6Easy_Ensemble_AdaBoost_Classifier.png)
@@ -101,12 +101,16 @@ Reference:
 ![Table1](https://github.com/Super-Manda/Credit-Risk/blob/main/Images/Table1.png)
 
 ### Results Summary:
-For balanced accuracy score, the Easy Ensemble with Adaptive Boost is the highest at 0.9317, and no other model really comes close, because the next highest is the Balanced Random Forest at 0.7885.  
+- For balanced accuracy score, the Easy Ensemble with Adaptive Boost is the highest at 0.9317, and no other model really comes close, because the next highest is the Balanced Random Forest at 0.7885.  
 
-For high risk precision, no model is truly recommendable in the sense that they range from 0.01 to 0.09, so all models are considered to have too many false positives, but of these, the one that is the most precise among them would be the Easy Ensemble with Adaptive Boost at 0.09.  Since precision is not a deal breaker in this industry, and recall is more important, it is noted that the Easy Ensemble with Adaptive Boost has the highest recall and that no other model comes close.   When looking at the weighted average of precision and recall (the F1 score), the Easy Ensemble with Adaptive Boost is the highest with a score of 0.16.       
+- For high risk precision, no model is truly recommendable in the sense that they range from 0.01 to 0.09, so all models are considered to have too many false positives, but of these, the one that is the most precise among them would be the Easy Ensemble with Adaptive Boost at 0.09.  
+
+- Since precision is not a deal breaker in this industry, and recall is more important, it is noted that the Easy Ensemble with Adaptive Boost has the highest recall and that no other model comes close.   
+
+- When looking at the weighted average of precision and recall (the F1 score), the Easy Ensemble with Adaptive Boost is the highest with a score of 0.16.       
 
 ## :chart: Recommendations:
 - Out of these six models, the Easy Ensemble AdaBoost Classifier Model is the most successful.
 
-
+- The least successful is the Cluster Centroids.  That model should definitely not be used because there is no metric for which it provides good results.
 
